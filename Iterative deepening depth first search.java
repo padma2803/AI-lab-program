@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
  
-public class Main
+public class IDFS
 {
   
 private Stack < Integer > stack;
@@ -19,7 +19,7 @@ private int maxDepth;
 private boolean goalFound = false;
   
  
-public Main () 
+public IDFS () 
   {
     
 stack = new Stack < Integer > ();
@@ -164,7 +164,7 @@ System.out.println ("Enter the destination for the graph");
 destination = scanner.nextInt ();
       
  
-Main iterativeDeepening = new Main ();
+IDFS iterativeDeepening = new IDFS ();
       
 iterativeDeepening.iterativeDeeping (adjacency_matrix, destination);
     
